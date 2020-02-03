@@ -30,7 +30,7 @@ SHT_FLG_CHANGED      =  0x01
 
 NO_BEGIN = 1
 
-cdef class pyiArduinoI2Csht:
+cdef class xxxNAMExxx:
     cdef iarduino_I2C_SHT c_sht
 
     def __cinit__(self, address=None, auto=None):

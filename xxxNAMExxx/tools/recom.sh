@@ -11,7 +11,7 @@ FILENAME="$(echo $1 | cut -d "." -f 1)"
 awk '{ gsub("#",""); print $0}' $1 \
 	| awk '{ gsub("//","#"); print $0}' \
 	| awk '{ gsub(";"," "); print $0}' \
-	| sed 's/iarduino_I2C_SHT/pyiArduinoI2Csht/g' \
+	| sed 's/xxxCNAMExxx/xxxNAMExxx/g' \
 	| sed 's/Serial.//' \
 	| sed 's/include/from/g' \
 	> $FILENAME.py
