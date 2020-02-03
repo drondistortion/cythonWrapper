@@ -2,7 +2,7 @@ cdef extern from "xxxCNAMExxx.cpp":
     pass
 
 cdef extern from "xxxCNAMExxx.h":
-    cdef cppclass iarduino_I2C_SHT:
+    cdef cppclass xxxCNAMExxx:
         xxxCNAMExxx() except +
         xxxCNAMExxx(unsigned char) except +
         bint begin()

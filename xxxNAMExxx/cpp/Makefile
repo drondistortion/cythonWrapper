@@ -1,7 +1,7 @@
 all: FindDevices NewAddress
 
-FindDevices             :FindDevices.cpp ../iarduino_I2C_SHT.cpp
-NewAddress              :NewAddress.cpp ../iarduino_I2C_SHT.cpp
+FindDevices             :FindDevices.cpp ../xxxCNAMExxx.cpp
+NewAddress              :NewAddress.cpp ../xxxCNAMExxx.cpp
 
 clean:
 	rm -f FindDevices NewAddress
