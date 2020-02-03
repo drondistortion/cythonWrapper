@@ -1,9 +1,9 @@
 // Данный пример меняет адрес модуля на указанный в argv[1].
 
 #include <iostream>
-#include "../xxxNAMExxx.h"
+#include "../xxxCNAMExxx.h"
 
-xxxNAMExxx module;
+xxxCNAMExxx module;
 
 uint8_t newAddress = 9;
 
