@@ -6,23 +6,23 @@ if [ $# -lt 2 ]
                 exit
 fi
 
-name='xxxNAMExxx'
-cname='xxxCNAMExxx'
+name='pyiArduinoI2Cdsl'
+cname='iarduino_I2C_DSL'
 
-echo mv $name $1
-#pushd $1
+mv $name $1
+pushd $1
 
 # remove this before actual run:
-pushd $name
+#pushd $name
 
 #EXT="$(ls | grep $name | cut -d "." -f 2)"
 #printf "\n"
 #echo $EXT
 
-echo mv $name.pyx $1.pyx
-echo mv $cname.pxd $2.pxd
+mv $name.pyx $1.pyx
+mv $cname.pxd $2.pxd
 
 popd
 
-echo "egrep -lRZ $name . | xargs -0 -l sed -i -e 's/$name/$1/g'"
-echo "egrep -lRZ $cname . | xargs -0 -l sed -i -e 's/$cname/$2/g'"
+egrep -lRZ $name . | xargs -0 -l sed -i -e "s/$name/$1/g"
+egrep -lRZ $cname . | xargs -0 -l sed -i -e "s/$cname/$2/g"
