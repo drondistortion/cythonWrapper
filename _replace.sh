@@ -10,19 +10,17 @@ name='pyiArduinoI2Cdsl'
 cname='iarduino_I2C_DSL'
 
 mv $name $1
+rm README.md
+mv xxxREADME.md README.md
+
 pushd $1
-
-# remove this before actual run:
-#pushd $name
-
-#EXT="$(ls | grep $name | cut -d "." -f 2)"
-#printf "\n"
-#echo $EXT
 
 mv $name.pyx $1.pyx
 mv $cname.pxd $2.pxd
 
 popd
 
+
 egrep -lRZ $name . | xargs -0 -l sed -i -e "s/$name/$1/g"
 egrep -lRZ $cname . | xargs -0 -l sed -i -e "s/$cname/$2/g"
+
