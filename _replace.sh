@@ -6,8 +6,8 @@ if [ $# -lt 2 ]
                 exit
 fi
 
-name='pyiArduinoI2Cdsl'
-cname='iarduino_I2C_DSL'
+name='xxxNAMExxx'
+cname='xxxCNAMExxx'
 
 mv $name $1
 rm README.md
