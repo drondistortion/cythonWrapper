@@ -2,7 +2,7 @@
 
 if [ $# -lt 2 ]
         then
-                echo 'usage: ./_replace.sh newPythonName oldCname'
+                echo 'usage: ./_replace.sh newPythonName old_C_Name'
                 exit
 fi
 
